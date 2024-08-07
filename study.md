@@ -18,16 +18,17 @@ Terminal:
 
 Em 'cypress.config.js'
 linha 11: 
-          ~~~
-          reporter: 'mochawesome',
-            reporterOptions: {
-              reportDir:'cypress/results',
-              overwrite: false,
-              html: true,
-              json: true,
-              timestamp:"mmddyyyy_HHMMss"}
-           }
-           ~~~
+
+```
+reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir:'cypress/results',
+    overwrite: false,
+    html: true,
+    json: true,
+    timestamp:"mmddyyyy_HHMMss"}
+ }
+```   
 
 
 Terminal: 
