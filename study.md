@@ -21,7 +21,7 @@ Terminal:
 Em 'cypress.config.js'
 linha 11: 
 
-```
+```javascript
 reporter: 'mochawesome',
   reporterOptions: {
     reportDir:'cypress/results',
@@ -42,7 +42,7 @@ results/mochswesome_0000000000000
 -----------------------------------------------------------------------
 Recurso Command = command.js
 
-```
+```javascript
 Cypress.Commands.add('login', (email, password) => { 
   cy.get('[data-test="input-loginEmail"]').type(email);
   cy.get('[data-test="input-loginPassword"]').type(password);
