@@ -18,7 +18,7 @@ Terminal:
 
 Em 'cypress.config.js'
 linha 11: 
-          ~~~
+          ~~~javascript
           reporter: 'mochawesome',
             reporterOptions: {
               reportDir:'cypress/results',
@@ -27,7 +27,7 @@ linha 11:
               json: true,
               timestamp:"mmddyyyy_HHMMss"}
            }
-           ~~
+           ~~~
 
 
 Terminal: 
