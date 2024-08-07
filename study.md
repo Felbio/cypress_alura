@@ -18,7 +18,7 @@ Terminal:
 
 Em 'cypress.config.js'
 linha 11: 
-          ~~~javascript
+          ~~~
           reporter: 'mochawesome',
             reporterOptions: {
               reportDir:'cypress/results',
