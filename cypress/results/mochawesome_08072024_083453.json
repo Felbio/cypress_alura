@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-07T11:34:49.360Z",
+    "end": "2024-08-07T11:34:53.382Z",
+    "duration": 4022,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8d412a6a-30cc-41c6-9e03-93a07600222d",
+      "title": "",
+      "fullFile": "cypress/e2e/login_incorrect.cy.js",
+      "file": "cypress/e2e/login_incorrect.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "225ce534-2ebb-4ed1-9695-cdf7a3df7550",
+          "title": "Acessar o AdoPet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fazer login com dados invalidos",
+              "fullTitle": "Acessar o AdoPet Fazer login com dados invalidos",
+              "timedOut": null,
+              "duration": 2540,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('acadiano@gmail.com', \"Senha1234\");\ncy.get('[data-test=\"submit-button\"]').click();\ncy.contains('Falha no login. Consulte suas credenciais.').should('be.visible');\n// cy.contains('Insira sua senha').should('be.visible');",
+              "err": {},
+              "uuid": "b75f0026-236f-4f6f-99f7-f3953c387102",
+              "parentUUID": "225ce534-2ebb-4ed1-9695-cdf7a3df7550",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b75f0026-236f-4f6f-99f7-f3953c387102"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2540,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-06T01:31:50.780Z",
+    "end": "2024-08-06T01:31:53.716Z",
+    "duration": 2936,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "725ceefd-b44a-4c6e-a74e-62244960039e",
+      "title": "",
+      "fullFile": "cypress/e2e/header_correto.cy.js",
+      "file": "cypress/e2e/header_correto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "101b6191-8f46-49ed-9741-872f44ba6fe5",
+          "title": "Entrar no AdoPet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visitar a página principal do AdoPet, clicar no icone de mensagens e fazer login e senha válidos",
+              "fullTitle": "Entrar no AdoPet Visitar a página principal do AdoPet, clicar no icone de mensagens e fazer login e senha válidos",
+              "timedOut": null,
+              "duration": 1417,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.header__message').click();\ncy.get('[data-test=\"input-loginEmail\"]').type(\"ana@gmail.com\");\ncy.get('[data-test=\"input-loginPassword\"]').type(\"Senha123\");\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "27991ecc-8602-43e0-8ab0-c664eb0ba6e2",
+              "parentUUID": "101b6191-8f46-49ed-9741-872f44ba6fe5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "27991ecc-8602-43e0-8ab0-c664eb0ba6e2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1417,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

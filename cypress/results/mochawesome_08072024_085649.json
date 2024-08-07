@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-08-07T11:56:42.162Z",
+    "end": "2024-08-07T11:56:49.677Z",
+    "duration": 7515,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "da52828e-4432-4fee-acde-0f5984f2b198",
+      "title": "",
+      "fullFile": "cypress/e2e/login_incorrect.cy.js",
+      "file": "cypress/e2e/login_incorrect.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "82339074-9ba9-4f24-9967-9974712a72ce",
+          "title": "Acessar o AdoPet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Fazer login com dados invalidos",
+              "fullTitle": "Acessar o AdoPet Fazer login com dados invalidos",
+              "timedOut": null,
+              "duration": 5930,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('acadiano@gmail.com', \"Senha1234\");\ncy.get('[data-test=\"submit-button\"]').click();\ncy.contains('Falha no login. Consulte suas credenciais.').should('be.visible');\n// cy.contains('Insira sua senha').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Falha no login. Consulte suas credenciais.' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Falha no login. Consulte suas credenciais.' but never did.\n    at Context.eval (webpack://cypressalura/./cypress/e2e/login_incorrect.cy.js:8:62)",
+                "diff": null
+              },
+              "uuid": "a383bfdb-c670-4e82-ab55-bf9ce2283878",
+              "parentUUID": "82339074-9ba9-4f24-9967-9974712a72ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a383bfdb-c670-4e82-ab55-bf9ce2283878"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5930,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
