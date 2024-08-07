@@ -51,4 +51,6 @@ Cypress.Commands.add('login', (email, password) => {
 ```
 
 chamada dentro do file .cy.js
-`cy.login('acadiano@gmail.com',"Senha1234");`
+```javascript 
+cy.login('acadiano@gmail.com',"Senha1234");
+```
