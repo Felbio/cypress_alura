@@ -1,10 +1,9 @@
 describe('Acessar o AdoPet', () => {
   beforeEach(() => {
-    cy.visit('https://adopet-frontend-cypress.vercel.app/')
+    cy.visit('https://adopet-frontend-cypress.vercel.app/login')
   });
 
-  it('Fazer login com sucesso', () => {
-    cy.get('[data-test="login-button"]').click();
+  it('Fazer login com sucesso', () => { 
     cy.login('felipe@felipe.com', 'Senha123');
   });
 })
