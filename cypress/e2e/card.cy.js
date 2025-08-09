@@ -4,5 +4,6 @@ describe('Acessar o AdoPet', () => {
   })
   it('Confirmar existencia de imagens', () => {
     cy.get('.cards').should('be.visible');   
+    top demais
   })
 })
