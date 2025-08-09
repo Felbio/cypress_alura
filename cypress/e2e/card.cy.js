@@ -3,7 +3,6 @@ describe('Acessar o AdoPet', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/home');
   })
   it('Confirmar existencia de imagens', () => {
-    cy.get('.cards').should('be.visible');   
-    top demais
+    cy.get('.cards').should('be.visible');
   })
 })
